@@ -1,0 +1,197 @@
+# Translation of the WordPress plugin GreyMatter Importer 0.2 by wordpressdotorg.
+# Copyright (C) 2010 wordpressdotorg
+# This file is distributed under the same license as the GreyMatter Importer package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GreyMatter Importer 0.2\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/greymatter-importer\n"
+"POT-Creation-Date: 2010-06-01 13:26+0300\n"
+"PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: greymatter-importer.php:39
+msgid "Import GreyMatter"
+msgstr ""
+
+#: greymatter-importer.php:49
+msgid "This is a basic GreyMatter to WordPress import script."
+msgstr ""
+
+#: greymatter-importer.php:50
+msgid "What it does:"
+msgstr ""
+
+#: greymatter-importer.php:52
+msgid ""
+"Parses gm-authors.cgi to import (new) authors. Everyone is imported at level "
+"1."
+msgstr ""
+
+#: greymatter-importer.php:53
+msgid ""
+"Parses the entries cgi files to import posts, comments, and karma on posts "
+"(although karma is not used on WordPress yet).<br />If authors are found not "
+"to be in gm-authors.cgi, imports them at level 0."
+msgstr ""
+
+#: greymatter-importer.php:54
+msgid ""
+"Detects duplicate entries or comments. If you don't import everything the "
+"first time, or this import should fail in the middle, duplicate entries will "
+"not be made when you try again."
+msgstr ""
+
+#: greymatter-importer.php:56
+msgid "What it does not:"
+msgstr ""
+
+#: greymatter-importer.php:58
+msgid ""
+"Parse gm-counter.cgi, gm-banlist.cgi, gm-cplog.cgi (you can make a CP log "
+"hack if you really feel like it, but I question the need of a CP log)."
+msgstr ""
+
+#: greymatter-importer.php:59
+msgid "Import gm-templates."
+msgstr ""
+
+#: greymatter-importer.php:60
+msgid "Doesn&#8217;t keep entries on top."
+msgstr ""
+
+#: greymatter-importer.php:68
+msgid "Second step: GreyMatter details:"
+msgstr ""
+
+#: greymatter-importer.php:71
+msgid "Path to GM files:"
+msgstr ""
+
+#: greymatter-importer.php:75
+msgid "Path to GM entries:"
+msgstr ""
+
+#: greymatter-importer.php:79
+msgid "Last entry&#8217;s number:"
+msgstr ""
+
+#: greymatter-importer.php:81
+msgid ""
+"This importer will search for files 00000001.cgi to 000-whatever.cgi,<br /"
+">so you need to enter the number of the last GM post here.<br />(if you "
+"don&#8217;t know that number, just log in to your FTP and look it out<br /"
+">in the entries&#8217; folder)"
+msgstr ""
+
+#: greymatter-importer.php:84
+msgid "Start Importing"
+msgstr ""
+
+#: greymatter-importer.php:117
+msgid "Wrong path, the path to the GM entries does not exist on the server"
+msgstr ""
+
+#: greymatter-importer.php:120
+msgid "Wrong path, the path to the GM files does not exist on the server"
+msgstr ""
+
+#: greymatter-importer.php:126
+msgid "The importer is running..."
+msgstr ""
+
+#: greymatter-importer.php:128
+msgid "importing users..."
+msgstr ""
+
+#: greymatter-importer.php:152
+#, php-format
+msgid "user %s"
+msgstr ""
+
+#: greymatter-importer.php:152
+msgid "Already exists"
+msgstr ""
+
+#: greymatter-importer.php:161
+#, php-format
+msgid "user %s..."
+msgstr ""
+
+#: greymatter-importer.php:161 greymatter-importer.php:164
+#: greymatter-importer.php:309 greymatter-importer.php:314
+msgid "Done"
+msgstr ""
+
+#: greymatter-importer.php:165
+msgid "importing posts, comments, and karma..."
+msgstr ""
+
+#: greymatter-importer.php:201
+#, php-format
+msgid "entry # %s : %s : by %s"
+msgstr ""
+
+#: greymatter-importer.php:229
+msgid "(already exists)"
+msgstr ""
+
+#: greymatter-importer.php:251
+#, php-format
+msgid "registered deleted user %s at level 0 "
+msgstr ""
+
+#: greymatter-importer.php:301
+#, php-format
+msgid "imported %s comment"
+msgid_plural "imported %s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: greymatter-importer.php:306
+#, php-format
+msgid "ignored %s pre-existing comment"
+msgid_plural "ignored %s pre-existing comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: greymatter-importer.php:316
+msgid "Completed GreyMatter import!"
+msgstr ""
+
+#: greymatter-importer.php:348
+msgid "GreyMatter"
+msgstr ""
+
+#: greymatter-importer.php:348
+msgid "Import users, posts, and comments from a Greymatter blog."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "GreyMatter Importer"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/extend/plugins/greymatter-importer/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Import posts, pages, comments, custom fields, categories, and tags from a "
+"WordPress export file."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "wordpressdotorg"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://wordpress.org/"
+msgstr ""

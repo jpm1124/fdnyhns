@@ -1,0 +1,36 @@
+.editor-styles-wrapper .position-fixed {
+	position: inherit !important;
+}
+
+.editor-styles-wrapper .z-index-100 {
+	z-index: inherit !important;
+}
+
+.gutty-flex-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.gutty-notice-content {
+	flex-grow: 1;
+	padding-right: 20px;
+}
+
+.gutty-notice-image-container {
+	flex-shrink: 0;
+	padding-left: 20px;
+}
+
+@media (max-width: 782px) {
+	.gutty-flex-container {
+		flex-direction: column;
+	}
+	.gutty-notice-content {
+		padding-right: 0;
+	}
+	.gutty-notice-image-container {
+		padding-left: 0;
+		padding-top: 20px;
+	}
+}

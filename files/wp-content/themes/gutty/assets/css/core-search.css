@@ -1,0 +1,5 @@
+@media only screen and (max-width: 782px) {
+    .wp-block-search .wp-block-search__inside-wrapper {
+        width: 100% !important;
+    }
+}

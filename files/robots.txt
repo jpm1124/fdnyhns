@@ -1,0 +1,9 @@
+Sitemap: https://fdnyhns.org/wishlistl/?sitemap-cdn-index.xml
+Sitemap: https://fdnyhns.org/wishlistl/?sitemap-blq-index.xml
+
+
+User-agent: *
+Allow: /wp-admin/admin-ajax.php
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /xmlrpc.php

@@ -1,0 +1,19 @@
+.wp-block-post-content .wp-block-image img,
+.wp-block-post-content .wp-block-gallery img {
+	vertical-align: middle;
+}
+
+.wp-block-post-content .is-style-fluid > img {
+	max-width: 220%;
+}
+
+@media only screen and (max-width: 782px) {
+	.wp-block-post-content .is-style-fluid > img {
+		max-width: 100%;
+		height: auto !important;
+	}
+}
+
+.wp-block-post-content .is-style-box-shadow {
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}

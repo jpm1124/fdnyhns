@@ -1,0 +1,193 @@
+/*
+Theme Name: Gutty
+Author: rainbowgeek
+Author URI: https://profiles.wordpress.org/rainbowgeek/
+Description: Gutty is a modern, Full Site Editing (FSE) compatible WordPress theme, designed for versatility and performance. Embracing the latest WordPress development practices, Gutty offers an array of customizable patterns, ensuring a seamless site-building experience. While the core theme is free, it comes with an optional premium extension that unlocks advanced capabilities, catering to a wide range of professional needs. Gutty is perfect for users seeking a blend of simplicity, flexibility, and power in their WordPress journey.
+Requires at least: 6.3
+Tested up to: 6.4
+Requires PHP: 7.4
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: gutty
+Tags: custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations
+*/
+
+/* Reset */
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+::selection {
+	background-color: var( --wp--preset--color--primary );
+	color: var( --wp--preset--color--base );
+}
+
+/* Global colors outside palette */
+:root {
+	--wp--preset--color--warning-50: #FFFAEB;
+	--wp--preset--color--warning-100: #FEF0C7;
+	--wp--preset--color--warning-400: #FDB022;
+	--wp--preset--color--warning-600: #DC6803;
+	--wp--preset--color--success-50: #ECFDF3;
+	--wp--preset--color--success-100: #DCFAE6;
+	--wp--preset--color--success-400: #47CD89;
+	--wp--preset--color--success-600: #079455;
+	--wp--preset--color--error-50: #FEF3F2;
+	--wp--preset--color--error-100: #FEE4E2;
+	--wp--preset--color--error-400: #F97066;
+	--wp--preset--color--error-600: #D92D20;
+}
+
+/* Utility CSS classes */
+.position-relative {
+	position: relative;
+}
+
+.position-fixed {
+	position: fixed;
+}
+
+.z-index-100 {
+	z-index: 100;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+.margin-0 {
+	margin: 0 !important;
+}
+
+.shadow {
+	box-shadow: 0 .5rem 1rem rgba(0,0,0, .15);
+}
+
+.shadow-sm {
+	box-shadow: 0 .125rem .25rem rgba(0,0,0, .075);
+}
+
+.shadow-lg {
+	box-shadow: 0 1rem 3rem rgba(0,0,0, .175);
+}
+
+.shadow-inset {
+	box-shadow: inset 0 1px 2px rgba(0,0,0, .075);
+}
+
+/* Forms */
+input[type="button"],
+input[type="email"],
+input[type="search"],
+input[type="submit"],
+input[type="text"],
+textarea {
+	-webkit-appearance: none;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+	outline-color: var(--wp--preset--color--primary);
+}
+
+input[type="checkbox"],
+input[type="image"],
+input[type="radio"] {
+	width: auto;
+}
+
+label {
+	width: 100%;
+	display: block;
+	margin-bottom: .5rem;
+}
+
+/* Remove template parts margins */
+:where(.wp-site-blocks) > * {
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+
+/* Remove blocks margins */
+:where(body .is-layout-constrained) > * {
+	margin-block-start: 1rem;
+	margin-block-end: 0;
+}
+
+/* Comments */
+.wp-block-comment-content * {
+	max-width: 100%;
+}
+
+/* Buttons tags */
+button {
+	transition: all .3s ease;
+	font-weight: 600;
+}
+
+/* Button on tertiary and base background */
+.has-tertiary-background-color button,
+.has-base-background-color button {
+	background-color: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--base);
+	
+}
+
+.has-tertiary-background-color button:hover,
+.has-base-background-color button:hover {
+	background-color: var(--wp--preset--color--primary-accent);
+	color: var(--wp--preset--color--primary);
+}
+
+.has-tertiary-background-color button:focus,
+.has-base-background-color button:focus {
+	background-color: var(--wp--preset--color--primary-accent);
+	color: var(--wp--preset--color--primary);
+	outline: 2px solid var(--wp--preset--color--primary-accent);
+}
+
+/* Button on cover and gradient background */
+.wp-block-cover button,
+.has-gradient-background button {
+	background-color: var(--wp--preset--color--base);
+	color: var(--wp--preset--color--primary);
+}
+
+.wp-block-cover button:hover,
+.has-gradient-background button:hover {
+	background-color: var(--wp--preset--color--primary-accent);
+	color: var(--wp--preset--color--primary);
+}
+
+.wp-block-cover button:focus,
+.has-gradient-background button:focus {
+	background-color: var(--wp--preset--color--primary-accent);
+	color: var(--wp--preset--color--primary);
+	outline: 2px solid var(--wp--preset--color--base);
+}
+
+/* Button on primary background */
+.has-primary-background-color button {
+	background-color: var(--wp--preset--color--base);
+	color: var(--wp--preset--color--primary);
+}
+
+.has-primary-background-color button:hover {
+	background-color: var(--wp--preset--color--primary-accent);
+	color: var(--wp--preset--color--primary);
+}
+
+.has-primary-background-color button:focus {
+	background-color: var(--wp--preset--color--primary-accent);
+	color: var(--wp--preset--color--primary);
+	outline: 2px solid var(--wp--preset--color--base);
+}

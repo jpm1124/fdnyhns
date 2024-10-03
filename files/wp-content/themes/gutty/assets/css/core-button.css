@@ -1,0 +1,192 @@
+/**
+ * Common Styles for all Buttons
+ */
+.wp-block-button .wp-block-button__link {
+	background-color: var(--wp--preset--color--primary);
+	transition: background-color 0.3s ease, color 0.3s ease;
+	border-color: var(--wp--preset--color--primary);
+}
+
+/**
+ * Gradient Background & Cover
+ * - 1. Primary button style for gradient & cover background
+ * - 2. Hover styles for primary button on gradient & cover background
+ * - 3. Focus styles for primary button on gradient & cover background
+ * - 4. Secondary button style for gradient & cover background
+ * - 5. Hover styles for secondary button on gradient & cover background
+ * - 6. Focus styles for secondary button on gradient & cover background
+ * - 7. Outline button style for gradient & cover background
+ * - 8. Hover styles for outline button on gradient & cover background
+ * - 9. Focus styles for outline button on gradient & cover background
+ */
+
+ /* 1. Primary button style for gradient & cover background */
+.has-gradient-background .wp-block-button:not(.is-style-secondary-button) .wp-block-button__link,
+.wp-block-cover .wp-block-button:not(.is-style-secondary-button) .wp-block-button__link {
+	background-color: var(--wp--preset--color--primary);
+	border-color: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--base);
+}
+
+/* 2. Hover styles for primary button on gradient & cover background */
+.has-gradient-background .wp-block-button:not(.is-style-secondary-button) .wp-block-button__link:hover,
+.wp-block-cover .wp-block-button:not(.is-style-secondary-button) .wp-block-button__link:hover {
+	background-color: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--base);
+}
+
+/* 3. Focus styles for primary button on gradient & cover background */
+.has-gradient-background .wp-block-button:not(.is-style-secondary-button) .wp-block-button__link:focus,
+.wp-block-cover .wp-block-button:not(.is-style-secondary-button) .wp-block-button__link:focus {
+	outline: 2px solid var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--base);
+}
+
+/* 4. Secondary button style for gradient & cover background */
+.has-gradient-background .wp-block-button.is-style-secondary-button .wp-block-button__link {
+	background-color: var(--wp--preset--color--primary-accent);
+}
+
+/* 5. Hover styles for secondary button on gradient & cover background */
+.has-gradient-background .wp-block-button.is-style-secondary-button .wp-block-button__link:hover {
+	background-color: var(--wp--preset--color--primary);
+}
+
+/* 6. Focus styles for secondary button on gradient & cover background */
+.has-gradient-background .wp-block-button.is-style-secondary-button .wp-block-button__link:focus,
+.wp-block-cover .wp-block-button.is-style-secondary-button .wp-block-button__link:focus {
+	outline: 2px solid var(--wp--preset--color--primary-accent);
+}
+
+/* 7. Outline button style for gradient & cover background */
+.has-gradient-background .wp-block-button.is-style-outline .wp-block-button__link,
+.wp-block-cover .wp-block-button.is-style-outline .wp-block-button__link {
+	border: 1px solid var(--wp--preset--color--base) !important;
+	color: var(--wp--preset--color--base) !important;
+}
+
+/* 8. Hover styles for outline button on gradient & cover background */
+.has-gradient-background .wp-block-button.is-style-outline .wp-block-button__link:hover,
+.wp-block-cover .wp-block-button.is-style-outline .wp-block-button__link:hover {
+	border: 1px solid var(--wp--preset--color--base);
+	color: var(--wp--preset--color--base);
+}
+
+/* 9. Focus styles for outline button on gradient & cover background */
+.has-gradient-background .wp-block-button.is-style-outline .wp-block-button__link:focus,
+.wp-block-cover .wp-block-button.is-style-outline .wp-block-button__link:focus {
+	border: 1px solid var(--wp--preset--color--base);
+	color: var(--wp--preset--color--base);
+	background-color: var(--wp--preset--color--primary);
+}
+
+
+/**
+ * Primary Color Background
+ * - 1. Primary button style on primary background
+ * - 2. Hover styles for primary button on primary background
+ * - 3. Focus styles for primary button on primary background
+ * - 4. Secondary button style on primary background
+ */
+
+/* 1. Primary button style on primary background */
+.has-primary-background-color .wp-block-button:not(.is-style-secondary-button) .wp-block-button__link,
+.has-gradient-background .wp-block-button:not(.is-style-secondary-button) .wp-block-button__link {
+	border-color: var(--wp--preset--color--primary);
+}
+
+/* 2. Hover styles for primary button on primary background */
+.has-primary-background-color .wp-block-button:not(.is-style-secondary-button) .wp-block-button__link:hover,
+.has-gradient-background .wp-block-button:not(.is-style-secondary-button) .wp-block-button__link:hover {
+	background-color: var(--wp--preset--color--primary); /* Lighter background on hover */
+	border-color: var(--wp--preset--color--primary);
+}
+
+/* 3. Focus styles for primary button on primary background */
+.has-primary-background-color .wp-block-button:not(.is-style-secondary-button) .wp-block-button__link:focus {
+	outline: 2px solid var(--wp--preset--color--base) !important;
+}
+
+/* 4. Secondary button style on primary background */
+.has-primary-background-color .wp-block-button.is-style-secondary-button .wp-block-button__link:focus {
+	outline: 2px solid var(--wp--preset--color--primary-accent);
+}
+
+/**
+ * Base & tertiary Background
+ * - 1. Focus style for primary button on base & tertiary background
+ * - 2. Secondary button style on base & tertiary background
+ * - 3. Hover styles for secondary button on base & tertiary background
+ * - 4. Focus styles for secondary button on base & tertiary background
+ */
+
+/* 1. Primary button style on base & tertiary background */
+.has-tertiary-background-color .wp-block-button:not(.is-style-secondary-button) .wp-block-button__link:focus,
+.has-base-background-color .wp-block-button:not(.is-style-secondary-button) .wp-block-button__link:focus {
+	outline: 2px solid var(--wp--preset--color--primary);
+	border-color: var(--wp--preset--color--primary);
+}
+
+/* 2. Secondary button style on base & tertiary background */
+.wp-block-button.is-style-secondary-button .wp-block-button__link {
+	background-color: var(--wp--preset--color--primary-accent);
+	border-color: var(--wp--preset--color--primary-accent);
+	color: var(--wp--preset--color--primary);
+}
+
+/* 3. Hover styles for secondary button on base & tertiary background */
+.wp-block-button.is-style-secondary-button .wp-block-button__link:hover {
+	background-color: var(--wp--preset--color--tertiary);
+}
+
+/* 4. Focus styles for secondary button on base & tertiary background */
+.has-base-background-color .wp-block-button.is-style-secondary-button .wp-block-button__link:focus,
+.has-base-background-color .wp-block-button.is-style-secondary-button .wp-block-button__link:focus {
+	outline: 2px solid var(--wp--preset--color--primary-accent) !important;
+}
+
+/**
+ * Outline Button
+ * - 1. Default Style for Outline Button
+ * - 2. Outline Button on primary Background
+ * - 3. Outline Button on tertiaty & base Background
+ */
+
+ /* 1. Default Style for Outline Button */
+.is-style-outline.is-style-outline.wp-block-button .wp-block-button__link {
+	color: var(--wp--preset--color--primary);
+	border-color: currentColor;
+	background-color: transparent;
+}
+
+.is-style-outline.is-style-outline.wp-block-button .wp-block-button__link:hover {
+	color: var(--wp--preset--color--main);
+}
+
+/* - 2. Outline Button on primary Background */
+.has-primary-background-color .is-style-outline.is-style-outline.wp-block-button .wp-block-button__link,
+.has-gradient-background .is-style-outline.is-style-outline.wp-block-button .wp-block-button__link {
+	color: var(--wp--preset--color--primary-accent);
+	border-color: currentColor;
+	background-color: transparent;
+}
+
+.has-primary-background-color .is-style-outline.is-style-outline.wp-block-button .wp-block-button__link:hover,
+.has-gradient-background .is-style-outline.is-style-outline.wp-block-button .wp-block-button__link:hover {
+	color: var(--wp--preset--color--tertiary-accent);
+	border-color: currentColor;
+	background-color: transparent;
+}
+
+/* - 3. Outline Button on tertiaty & base Background */
+.has-tertiary-background-color .is-style-outline.is-style-outline.wp-block-button .wp-block-button__link {
+	color: var(--wp--preset--color--primary);
+	border-color: currentColor;
+	background-color: transparent;
+}
+
+.has-tertiary-background-color .is-style-outline.is-style-outline.wp-block-button .wp-block-button__link:hover {
+	color: var(--wp--preset--color--main);
+	border-color: currentColor;
+	background-color: transparent;
+}

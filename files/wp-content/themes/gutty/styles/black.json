@@ -1,0 +1,96 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"title": "Black",
+	"settings": {
+		"color": {
+			"duotone": [
+				{
+					"name": "Black and white",
+					"slug": "duotone-1",
+					"colors": ["#000000", "#ffffff"]
+				}
+			],
+			"gradients": [
+				{
+					"name": "Vertical hard black to white",
+					"slug": "gradient-1",
+					"gradient": "linear-gradient(to bottom, #000000 50%, #FFFFFF 50%)"
+				},
+				{
+					"name": "Vertical black to white",
+					"slug": "gradient-2",
+					"gradient": "linear-gradient(to bottom, #14111f 50%, #FFFFFF 50%)"
+				}
+			],
+			"palette": [
+				{
+					"name": "Main",
+					"slug": "main",
+					"color": "#14111f"
+				},
+				{
+					"name": "Primary",
+					"slug": "primary",
+					"color": "#14111f"
+				},
+				{
+					"name": "Secondary",
+					"slug": "secondary",
+					"color": "#595959"
+				},
+				{
+					"name": "Tertiary",
+					"slug": "tertiary",
+					"color": "#f1f1f1"
+				},
+				{
+					"name": "Primary Accent",
+					"slug": "primary-accent",
+					"color": "#efefef"
+				},
+				{
+					"color": "#4B5563",
+					"name": "Gray / Primary",
+					"slug": "gray-1"
+				},
+				{
+					"color": "#E6E7EB",
+					"name": "Gray / Secondary",
+					"slug": "gray-2"
+				},
+				{
+					"color": "#F9FAFB",
+					"name": "Gray / gray-3",
+					"slug": "gray-3"
+				},
+				{
+					"name": "Base",
+					"slug": "base",
+					"color": "#fff"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"button": {
+				"border": {
+					"color": "var(--wp--preset--color--primary)"
+				},
+				"color": {
+					"background": "var(--wp--preset--color--primary)",
+					"text": "var(--wp--preset--color--white)"
+				},
+				":hover": {
+					"color": {
+						"background": "var(--wp--preset--color--primary)"
+					},
+					"border": {
+						"color": "var(--wp--preset--color--primary)"
+					}
+				}
+			}
+		}
+	}
+}

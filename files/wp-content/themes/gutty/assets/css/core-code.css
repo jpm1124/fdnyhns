@@ -1,0 +1,5 @@
+.wp-block-code.is-style-light {
+	background: var(--wp--preset--color--tertiary) !important;
+	color: var(--wp--preset--color--primary) !important;
+	border: 1px solid var( --wp--preset--color--primary-accent) !important;
+}

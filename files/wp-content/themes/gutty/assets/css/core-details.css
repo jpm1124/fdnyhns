@@ -1,0 +1,107 @@
+.wp-block-details summary strong {
+	font-size: var(--wp--preset--font-size--medium);
+}
+.wp-block-details p {
+	margin-block-start: 1rem;
+	font-size: var(--wp--preset--font-size--lg);
+}
+
+/* Add a custom transition when opening/closing. */
+.wp-block-details {
+	transition: all 0.5s ease-in-out;
+}
+
+/* Add horizontal margin to nested blocks/elements. */
+.wp-block-details > :where( :not( summary ) ) {
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+/* If open, add some bottom padding to avoid content butting against the bottom. */
+.wp-block-details[open] {
+	padding-bottom: 2rem;
+}
+
+/* Base `summary` element styling. */
+.wp-block-details summary {
+	transition: all 0.5s ease-in-out;
+	box-sizing: border-box;
+	padding: 2rem;
+	font-weight: 500;
+}
+
+/* Change the background of the `summary` element based on state. */
+.wp-block-details[open] summary,
+.wp-block-details summary:hover,
+.wp-block-details summary:focus {
+	background: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--base);
+}
+
+.wp-block-details summary::marker {
+	content: none;
+}
+
+.wp-block-details summary::after {
+	content: " +";
+	float: right;
+	text-align: right;
+}
+
+.wp-block-details[open] summary::after {
+	content: " -"
+}
+
+/**
+ * Block style variations
+ */
+
+ /* Warning */
+ .wp-block-details.is-style-warning {
+	background: var(--wp--preset--color--base) !important;
+	border-left: 5px solid var(--wp--preset--color--warning-600);
+	box-shadow: 1px 1px 1px 0 var(--wp--preset--color--warning-100);
+	color: var(--wp--preset--color--warning-600) !important;
+}
+
+.wp-block-details.is-style-warning summary {
+	color: var(--wp--preset--color--warning-warning-600) !important;
+	font-weight: bold;
+	background: var(--wp--preset--color--warning-50);
+}
+
+.wp-block-details.is-style-warning summary::marker {
+	content: "⚠️ "
+}
+
+ /* Success */
+ .wp-block-details.is-style-success {
+	background: var(--wp--preset--color--base) !important;
+	border-left: 5px solid var(--wp--preset--color--success-600);
+	box-shadow: 1px 1px 1px 0 var(--wp--preset--color--success-100);
+	color: var(--wp--preset--color--success-600) !important;
+}
+
+.wp-block-details.is-style-success summary {
+	color: var(--wp--preset--color--warning-success-600) !important;
+	font-weight: bold;
+	background: var(--wp--preset--color--success-50);
+}
+
+ /* Error */
+ .wp-block-details.is-style-error {
+	background: var(--wp--preset--color--base) !important;
+	border-left: 5px solid var(--wp--preset--color--error-600);
+	box-shadow: 1px 1px 1px 0 var(--wp--preset--color--error-100);
+	color: var(--wp--preset--color--error-600) !important;
+}
+
+.wp-block-details.is-style-error summary {
+	color: var(--wp--preset--color--warning-error-600) !important;
+	font-weight: bold;
+	background: var(--wp--preset--color--error-50);
+}
+
+.wp-block-details.is-style-error summary::marker {
+	content: "⚠️ "
+}

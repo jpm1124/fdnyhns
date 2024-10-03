@@ -1,0 +1,21 @@
+@media only screen and (max-width: 782px) {
+	.wp-block-navigation .wp-block-navigation__container {
+		--navigation-layout-justification-setting: flex-start;
+		--navigation-layout-justify: flex-start;
+	}
+	.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content{
+		padding:calc(2rem + 24px) 1rem 1rem;
+	}
+	.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content ul{
+		width:100%;
+		word-break:break-word;
+	}
+	.wp-block-navigation__responsive-container-close{
+		right: 10px;
+		top: 25px;
+	}
+	.wp-block-navigation__responsive-container-close svg {
+		height: 34px;
+		width: 34px;
+	}
+}

@@ -1,0 +1,31 @@
+.wp-block-quote {
+    position: relative;
+}
+
+.wp-block-quote::before,
+.wp-block-quote::after {
+    position: absolute;
+    font-size: var(--wp--preset--font-size--xx-large);
+    left: 0;
+    top: 0;
+}
+.wp-block-quote::before {
+    content:'“';
+}
+
+.wp-block-quote::after {
+    content: '”';
+    left: calc(100% - var(--wp--preset--spacing--20));
+    top: calc(100% - var(--wp--preset--spacing--20));
+}
+
+/* Plain variation */
+.wp-block-quote.is-style-plain::before {
+    left: var(--wp--preset--spacing--40);
+}
+
+.wp-block-quote.is-style-plain::after {
+    left: calc(100% - var(--wp--preset--spacing--40));
+    bottom: var(--wp--preset--spacing--40);
+    top: inherit;
+}

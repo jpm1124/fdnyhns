@@ -1,0 +1,68 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"title": "Pink",
+	"settings": {
+		"color": {
+			"gradients": [
+				{
+					"name": "Vertical hard black to white",
+					"slug": "gradient-1",
+					"gradient": "linear-gradient(to bottom, #000000 50%, #FFFFFF 50%)"
+				},
+				{
+					"name": "Vertical hard pink to white",
+					"slug": "gradient-2",
+					"gradient": "linear-gradient(to bottom, #b3043c 50%, #FFFFFF 50%)"
+				}
+			],
+			"palette": [
+				{
+					"name": "Main",
+					"slug": "main",
+					"color": "#14111f"
+				},
+				{
+					"name": "Primary",
+					"slug": "primary",
+					"color": "#b3043c"
+				},
+				{
+					"name": "Secondary",
+					"slug": "secondary",
+					"color": "#FB1A62"
+				},
+				{
+					"name": "Tertiary",
+					"slug": "tertiary",
+					"color": "#FFF5F8"
+				},
+				{
+					"name": "Primary Accent",
+					"slug": "primary-accent",
+					"color": "#FFD7E4"
+				},
+				{
+					"color": "#4B5563",
+					"name": "Gray / Primary",
+					"slug": "gray-1"
+				},
+				{
+					"color": "#E6E7EB",
+					"name": "Gray / Secondary",
+					"slug": "gray-2"
+				},
+				{
+					"color": "#F9FAFB",
+					"name": "Gray / gray-3",
+					"slug": "gray-3"
+				},
+				{
+					"name": "Base",
+					"slug": "base",
+					"color": "#fff"
+				}
+			]
+		}
+	}
+}
